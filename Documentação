@@ -1,0 +1,31 @@
+Documentação do Projeto: Previsão de Demanda em Vendas
+
+Introdução
+Este projeto visa abordar a tarefa crucial de previsão de demanda em vendas, um desafio enfrentado por muitas empresas para otimizar a gestão de estoques e tomar decisões informadas. Através da análise de padrões sazonais e eventos especiais nos dados de vendas, bem como a aplicação de técnicas avançadas de modelagem de séries temporais, buscamos criar um modelo preciso para prever as vendas futuras.
+
+Conjunto de Dados
+O projeto utiliza três conjuntos de dados:
+
+Features DataFrame: Contém informações sobre lojas, como tamanho, tipo e indicadores econômicos como temperatura, preço do combustível e índice de preços ao consumidor (CPI). Também inclui detalhes sobre eventos de markdown (descontos).
+
+Sales DataFrame: Apresenta informações de vendas semanais por loja e departamento, incluindo a variável alvo, "Weekly_Sales", bem como a indicação de feriados.
+
+Stores DataFrame: Oferece detalhes sobre cada loja, como tipo e tamanho.
+
+Análise Exploratória de Dados
+A análise exploratória de dados revelou insights importantes:
+
+Padrões sazonais mensais nas vendas por loja foram observados, indicando possíveis tendências de compras sazonais.
+A sazonalidade semanal das vendas mostra que sextas-feiras e sábados tendem a ter maiores médias de vendas.
+Correlações entre variáveis numéricas, como temperatura, preço do combustível e CPI, foram exploradas para identificar possíveis influências nas vendas.
+Modelagem de Séries Temporais
+A modelagem de séries temporais foi realizada utilizando o modelo SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous Regressors). O modelo foi ajustado e avaliado utilizando métricas como erro médio absoluto (MAE), erro quadrático médio (MSE) e erro percentual absoluto médio (MAPE) em relação aos dados de teste.
+
+Previsões Futuras
+O modelo ajustado foi utilizado para fazer previsões futuras de demanda com base em sazonalidades e eventos especiais. As previsões foram geradas para um período futuro específico, permitindo insights sobre as vendas potenciais.
+
+Visualização de Resultados
+As previsões futuras foram visualizadas em comparação com os dados reais de vendas, proporcionando uma compreensão visual e intuitiva das tendências previstas.
+
+Conclusões e Recomendações
+O modelo de previsão de demanda em vendas demonstrou ser uma ferramenta valiosa para orientar a gestão de estoques e a tomada de decisões estratégicas. Recomenda-se a utilização contínua do modelo para previsões em tempo real e a atualização periódica dos hiperparâmetros para garantir a precisão das previsões.
